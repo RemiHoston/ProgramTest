@@ -37,6 +37,7 @@ namespace LittleSeagull.WebApi.Controllers
         [HttpGet]
         public HttpResponseMessage GetUser([FromUri] Guid userID)
         {
+            //Hello 你好!
             User user = accountsDataService.GetUser(userID);
             var response = Request.CreateResponse<User>(HttpStatusCode.OK, user);
             return response;
