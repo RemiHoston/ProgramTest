@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1LittleSeagull.Model", "Lit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3LittleSeagull.DataService", "LittleSeagull.DataService\3LittleSeagull.DataService.csproj", "{158951E0-7318-47CC-9942-87349E61056A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleSeagull.UnitTest", "ConsoleApplication1\LittleSeagull.UnitTest.csproj", "{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
