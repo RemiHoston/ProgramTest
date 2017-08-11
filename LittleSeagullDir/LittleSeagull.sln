@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleSeagull.WebApi", "LittleSeagull.WebApi\LittleSeagull.WebApi.csproj", "{8BB9F492-5980-43A4-A3A0-D7B8264046C2}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1LittleSeagull.Model", "LittleSeagull.Model\1LittleSeagull.Model.csproj", "{A4237785-FC53-4426-AAE3-2EAAEEC4E6A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3LittleSeagull.DataService", "LittleSeagull.DataService\3LittleSeagull.DataService.csproj", "{158951E0-7318-47CC-9942-87349E61056A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{158951E0-7318-47CC-9942-87349E61056A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158951E0-7318-47CC-9942-87349E61056A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158951E0-7318-47CC-9942-87349E61056A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71EB2E30-AFC5-4BF4-AEDF-6C7CEF1BE4A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
