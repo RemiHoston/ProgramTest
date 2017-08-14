@@ -16,5 +16,6 @@ namespace LittleSeagull.Interface
         void UpdateLastLogin(User user);
         User GetUser(Guid userID);
         void UpdateUser(User user);
+            
     }
 }

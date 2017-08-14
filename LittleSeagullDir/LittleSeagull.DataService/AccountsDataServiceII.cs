@@ -16,7 +16,7 @@ namespace LittleSeagull.DataService
         }
 
         public User GetUser(Guid userID)
-        {
+        {   
             User user = new User();
             user.UserId = userID;
             user.FirstName = "贺";
