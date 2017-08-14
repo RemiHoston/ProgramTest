@@ -18,5 +18,6 @@ namespace LittleSeagull.Model
         public DateTime DateCreated { get; set; }
         public DateTime DateUpdated { get; set; }
         public DateTime DateLastLogin { get; set; }
+             
     }
 }

@@ -23,7 +23,7 @@ namespace LittleSeagull.DataService
             user.LastName = "成德";
             user.EmailAddress = "laohe1114@126.com";
             user.UserName = "laohe";
-            return user;
+            return user;  
         }
 
         public User GetUserByUserName(string userName)
