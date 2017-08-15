@@ -10,12 +10,12 @@ namespace LittleSeagull.Interface
     public interface IAccountsDataService : IDisposable
     {
 
-        void RegisterUser(User user);
-        User GetUserByUserName(string userName);
-        User Login(string userName, string password);
-        void UpdateLastLogin(User user);
-        User GetUser(Guid userID);
-        void UpdateUser(User user);
+        void RegisterUser(UserObject user);
+        UserObject GetUserByUserName(string userName);
+        UserObject Login(string userName, string password);
+        void UpdateLastLogin(UserObject user);
+        UserObject GetUser(Guid userID);
+        void UpdateUser(UserObject user);
             
     }
 }

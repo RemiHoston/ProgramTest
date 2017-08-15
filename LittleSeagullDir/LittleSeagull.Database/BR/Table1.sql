@@ -1,0 +1,5 @@
+﻿CREATE TABLE [BR].[Table1]
+(
+	[Id] INT NOT NULL, 
+    CONSTRAINT [PK_Table1] PRIMARY KEY ([Id]) 
+)

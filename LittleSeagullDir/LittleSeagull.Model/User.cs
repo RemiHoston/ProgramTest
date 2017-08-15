@@ -1,23 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LittleSeagull.Model
 {
-    public class User
+
+    [Table("User", Schema = "BB")]
+    public class UserObject
     {
-        public Guid UserId { get; set; }
-        public string UserName { get; set; }
+        /// <summary>
+        /// 用户编码
+        /// </summary>
+        [Key]
+        [Column("UserID")]
+        public string UserID { get; set; }
+        /// <summary>
+        /// 显示名称
+        /// </summary>
+        [Column("DisplayName")]
+        public string DisplayName { get; set; }
+        /// <summary>
+        /// 国家（英文）名称
+        /// </summary>
+        [Column("FirstName")]
         public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Password { get; set; }
-        public string EmailAddress { get; set; }
-        public string DefaultPage { get; set; }
-        public DateTime DateCreated { get; set; }
-        public DateTime DateUpdated { get; set; }
-        public DateTime DateLastLogin { get; set; }
-             
+        /// <summary>
+        /// 姓氏
+        /// </summary>
+        [Column("LastName")]
+        public string LastName { get; set; }        
     }
 }

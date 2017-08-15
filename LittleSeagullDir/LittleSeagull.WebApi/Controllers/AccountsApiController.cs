@@ -16,14 +16,8 @@ namespace LittleSeagull.WebApi.Controllers
         IAccountsDataService accountsDataService;
         public AccountsApiController()
         {
-            if (DateTime.Now.Year / 2 == 0)
-            {
-                accountsDataService = new AccountsDataService();
-            }
-            else {
-                accountsDataService = new AccountsDataServiceII();
-            }
-           
+            accountsDataService = new AccountsDataService();
+
         }
         [Route("Login")]
         [HttpPost]
@@ -37,8 +31,8 @@ namespace LittleSeagull.WebApi.Controllers
         [HttpGet]
         public HttpResponseMessage GetUser([FromUri] Guid userID)
         {
-            User user = accountsDataService.GetUser(userID);
-            var response = Request.CreateResponse<User>(HttpStatusCode.OK, user);
+            UserObject user = accountsDataService.GetUser(userID);
+            var response = Request.CreateResponse<UserObject>(HttpStatusCode.OK, user);
             return response;
 
 

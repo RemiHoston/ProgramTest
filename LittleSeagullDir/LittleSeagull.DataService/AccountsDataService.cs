@@ -1,10 +1,8 @@
 ﻿using LittleSeagull.Interface;
+using LittleSeagull.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LittleSeagull.Model;
 
 namespace LittleSeagull.DataService
 {
@@ -15,38 +13,41 @@ namespace LittleSeagull.DataService
             throw new NotImplementedException();
         }
 
-        public User GetUser(Guid userID)
+        public UserObject GetUser(Guid userID)
         {
-            User user = new User();
-            user.UserId = userID;
-            user.FirstName = "贺";
-            user.LastName = "成德";
-            user.EmailAddress = "laohe1114@126.com";
-            user.UserName = "laohe";
-            return user;  
+            UserObject result = null;
+            using (var context = new CommonDbContext())
+            {
+                List<UserObject> list = new List<UserObject>();
+                list = context.UserObject.Where(d => d.UserID.Equals(userID.ToString())).ToList();
+                if (list.Count()>0) {
+                    result = list.FirstOrDefault();
+                }
+            }
+            return result;
         }
 
-        public User GetUserByUserName(string userName)
-        {
-            throw new NotImplementedException();
-        }
-
-        public User Login(string userName, string password)
+        public UserObject GetUserByUserName(string userName)
         {
             throw new NotImplementedException();
         }
 
-        public void RegisterUser(User user)
+        public UserObject Login(string userName, string password)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateLastLogin(User user)
+        public void RegisterUser(UserObject user)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateUser(User user)
+        public void UpdateLastLogin(UserObject user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateUser(UserObject user)
         {
             throw new NotImplementedException();
         }
