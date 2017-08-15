@@ -51,6 +51,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\Style.css" />
+    <Content Include="default.html" />
+    <Content Include="javascript\angular.min.js" />
+    <Content Include="javascript\app.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
