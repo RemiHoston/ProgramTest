@@ -13,10 +13,10 @@ namespace LittleSeagull.WebApi.Controllers
     [RoutePrefix("api/accounts")]
     public class AccountsApiController : ApiController
     {
-        IAccountsDataService accountsDataService;
+        IUserDataService userDataService;
         public AccountsApiController()
         {
-            accountsDataService = new AccountsDataService();
+            userDataService = new UserDataService();
 
         }
         [Route("Login")]
@@ -31,7 +31,7 @@ namespace LittleSeagull.WebApi.Controllers
         [HttpGet]
         public HttpResponseMessage GetUser([FromUri] Guid userID)
         {
-            UserObject user = accountsDataService.GetUser(userID);
+            UserObject user = userDataService.GetUser(userID);
             var response = Request.CreateResponse<UserObject>(HttpStatusCode.OK, user);
             return response;
 

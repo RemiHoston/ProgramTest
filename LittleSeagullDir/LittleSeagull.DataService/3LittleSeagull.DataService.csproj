@@ -53,7 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountsDataService.cs" />
+    <Compile Include="UserDataService.cs" />
     <Compile Include="BankObject.cs" />
     <Compile Include="CommonDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LittleSeagull.Interface
 {
-    public interface IAccountsDataService : IDisposable
+    public interface IUserDataService : IDisposable
     {
 
         void RegisterUser(UserObject user);

@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace LittleSeagull.DataService
 {
-    public class AccountsDataService : IAccountsDataService
+    public class UserDataService : IUserDataService
     {
         public void Dispose()
         {
