@@ -56,6 +56,7 @@
     <Content Include="default.html" />
     <Content Include="javascript\angular.min.js" />
     <Content Include="javascript\app.js" />
+    <Content Include="javascript\tmPagination.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

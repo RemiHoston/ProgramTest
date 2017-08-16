@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/Style.css" type="text/css" />
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <script type="text/javascript" src="javascript/angular.min.js"></script>
-   
+    <script src="javascript/tmPagination.js"></script>
 </head>
 <body ng-controller="myCtrl">
     <div class="Title">{{Title}}</div>
@@ -61,6 +61,7 @@
           </tbody>
 
         </table>
+          <div class="foot-page" tm-pagination="paginationConf"></div>
       </div>
     </div>
     <div class="row" ng-show="currentItem != null">

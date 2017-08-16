@@ -1,4 +1,4 @@
-﻿var app = angular.module('app', []);
+﻿var app = angular.module('app', ['pagination']);
 app.controller('myCtrl',
         function ($scope, $http) {
             $scope.Title = "学生信息";
