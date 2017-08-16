@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StudentsService.cs" />
     <Compile Include="UserDataService.cs" />
     <Compile Include="BankObject.cs" />
     <Compile Include="CommonDbContext.cs" />
