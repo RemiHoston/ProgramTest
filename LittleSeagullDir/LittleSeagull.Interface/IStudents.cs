@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LittleSeagull.Interface
 {
     public class Result<T> {
-        public T Data { get; set; }
+        public T Data { get; set; }           
 
         public bool IsSuccess { get; set; }
 
